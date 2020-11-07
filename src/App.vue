@@ -1,19 +1,23 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <header><h1>Ou-est CharliMT ?</h1></header>
+    <RoomList/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RoomList   from '@/components/RoomList';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RoomList,
   }
 }
 </script>
 
 <style>
+h1 {
+  text-decoration: underline;
+}
 </style>

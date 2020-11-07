@@ -1,0 +1,14 @@
+{
+	"rooms": [
+		{"name": "Arrêt maladie", "color": "#32a852" },
+		{"name": "En cours", "color": "#a83290" },
+		{"name": "En entreprise", "color": "#eb9b13" },
+		{"name": "Disponible", "color": "#0e90ed" },
+		{"name": "Indisponible", "color": "#9ba0a3" }
+	],
+	"users": [
+		{"name": "Bob", "room": "Disponible"},
+		{"name": "Julie", "room": "En cours"},
+		{"name": "Emily", "room": "En cours"}
+	]
+}
