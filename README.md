@@ -1,24 +1,20 @@
-# ou-est-chalimt
+# Où-est-CharliMT
 
 ## Project setup
+To use this project you will need vueJS, npm and node. Make sure it is well installed.
+
+After that run next commands
 ```
-npm install
+$ npm install -g json-server
+$ npm install
 ```
 
-### Compiles and hot-reloads for development
+## Project running
+Run the API
 ```
-npm run serve
+$ npm run api
 ```
-
-### Compiles and minifies for production
+Run the vue application
 ```
-npm run build
+$ npm run serve
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
