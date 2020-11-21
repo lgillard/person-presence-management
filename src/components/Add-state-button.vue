@@ -14,8 +14,7 @@ export default {
   methods: {
     createDefaultState() {
       const defaultState = {name:"Nouvel état", color:"yellow"};
-      axios.post("http://localhost:3000/rooms", defaultState);
-      this.$emit('newStateCreated');
+      axios.post("http://localhost:3000/rooms", defaultState).then(() => {this.$emit('newStateCreated')});
     }
   },
 };

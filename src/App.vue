@@ -20,6 +20,9 @@ export default {
 h1 {
   text-decoration: underline;
 }
+h2 {
+  font-size: 10vh;
+}
 .page-container {
   margin: 5vh;
 }
@@ -30,7 +33,7 @@ h1 {
   height: 50vh;
   text-align: center;
 }
-.pointer {
+.pointercrea {
   cursor: pointer;
 }
 </style>
