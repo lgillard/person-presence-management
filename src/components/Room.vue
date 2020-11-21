@@ -4,9 +4,9 @@
       <div v-if="!editEnabled">
         <h2>{{ roomTemp.name }}</h2>
         <div>
-          <!-- Peoples -->
-          <div>
-            <span v-for="user in users" :key="user.id">{{ user.name }},</span>
+          <!-- People -->
+          <div class="row">
+            <Person v-for="user in users" :key="user.id" :person="user" class="col-4"/>
           </div>
 
           <!-- Icons -->
@@ -37,10 +37,13 @@
 </template>
 
 <script>
-import axios from 'axios';
+import Person from '@/components/Person';
+import axios  from 'axios';
 
 export default {
-  name:       'Room', props: {
+  components: {
+    Person,
+  }, name:    'Room', props: {
     room:     {
       default: { id: 0, name: '', color: 'grey' },
     }, users: { type: [] },
@@ -73,6 +76,11 @@ export default {
 </script>
 
 <style scoped>
+h2
+{
+  margin-bottom: 2vh;
+}
+
 .icon
 {
   height: 3.5vh;
@@ -92,4 +100,5 @@ export default {
   position: absolute;
   right:    9vh;
 }
+
 </style>
