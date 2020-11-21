@@ -1,12 +1,12 @@
 <template>
-  <div class="col-3">
+  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
     <div :style="'background-color:' + roomTemp.color" class="m-2 box">
       <div v-if="!editEnabled">
         <h2>{{ roomTemp.name }}</h2>
         <div>
           <!-- People -->
-          <div class="row">
-            <Person v-for="user in users" :key="user.id" :person="user" class="col-4"/>
+          <div :data-id="room.id" class="row dropzone">
+            <Person v-for="user in users" :key="user.id" :person="user" class="col-3"/>
           </div>
 
           <!-- Icons -->
@@ -46,7 +46,7 @@ export default {
   }, name:    'Room', props: {
     room:     {
       default: { id: 0, name: '', color: 'grey' },
-    }, users: { type: [] },
+    }, users: { type: Array },
   }, data()
   {
     return {
@@ -101,4 +101,8 @@ h2
   right:    9vh;
 }
 
+.row
+{
+  height: 38vh;
+}
 </style>

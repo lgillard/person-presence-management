@@ -1,7 +1,7 @@
 <template>
-  <div v-b-tooltip.hover :title="name" class="people">
+  <div v-b-tooltip.hover :data-id="person.id" :title="name" class="people" draggable="true" @dragstart="dragstart">
     <b-icon-person class="icon"></b-icon-person>
-    <div>{{ initials }}</div>
+    <div class="initials">{{ initials }}</div>
   </div>
 </template>
 
@@ -21,6 +21,11 @@ export default {
     {
       return this.person.firstname + ' ' + this.person.lastname.toUpperCase();
     },
+  }, methods:  {
+    dragstart(event)
+    {
+      event.dataTransfer.setData('text/plain', null);
+    },
   },
 };
 </script>
@@ -35,5 +40,11 @@ export default {
 .people
 {
   cursor: grab;
+}
+
+.initials
+{
+  font-weight: bold;
+  margin-top:  -1vh;
 }
 </style>
