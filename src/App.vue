@@ -26,9 +26,11 @@ h1 {
 .border-1 {
   border: solid 1px;
 }
-
 .box {
   height: 50vh;
   text-align: center;
+}
+.pointer {
+  cursor: pointer;
 }
 </style>

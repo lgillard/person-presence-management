@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <Room v-for="room in rooms" :key="room.id" :room="room"></Room>
-    <AddStateButton/>
+    <AddStateButton @newStateCreated="() => {updateList}"/>
   </div>
 </template>
 
@@ -18,9 +18,15 @@ export default {
   },
   created()
   {
-    axios.get('http://localhost:3000/rooms').then(response => {
-      this.rooms = response.data;
-    });
+    this.updateList();
+    setInterval(this.updateList, 10000);
+  },
+  methods: {
+    updateList() {
+      axios.get('http://localhost:3000/rooms').then(response => {
+        this.rooms = response.data;
+      });
+    }
   }
 }
 </script>
