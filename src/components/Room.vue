@@ -9,7 +9,7 @@
 
           <!-- Icons -->
           <div>
-            <b-icon-trash class="icon left-position pointer"></b-icon-trash>
+            <b-icon-trash class="icon left-position pointer" @click="deleteRoom"></b-icon-trash>
             <b-icon-pencil class="icon right-position pointer" @click="editEnabled = true"></b-icon-pencil>
           </div>
         </div>
@@ -59,6 +59,12 @@ export default {
                                                                                      this.$emit('stateUpd');
                                                                                      this.editEnabled = false;
                                                                                    });
+    }, deleteRoom()
+    {
+      axios.delete('http://localhost:3000/rooms/' + this.room.id).then(() =>
+                                                                       {
+                                                                         this.$emit('stateUpd');
+                                                                       });
     },
   },
 };
