@@ -1,6 +1,11 @@
 <template>
   <div class="row">
     <Room v-for="room in rooms" :key="room.name" :room="room"></Room>
+    <div class="col-3">
+      <div class="m-2 border-dark border-1" style="height: 50vh; text-align: center">
+        <h2>+ Crée un état</h2>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,4 +29,8 @@ export default {
 </script>
 
 <style scoped>
+  h2 {
+    top: 50%;
+    line-height: 50vh;
+  }
 </style>

@@ -23,4 +23,7 @@ h1 {
 .page-container {
   margin: 5vh;
 }
+.border-1 {
+  border: solid 1px;
+}
 </style>
