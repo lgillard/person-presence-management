@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-container">
     <header><h1>Ou-est CharliMT ?</h1></header>
     <RoomList/>
   </div>
@@ -19,5 +19,8 @@ export default {
 <style>
 h1 {
   text-decoration: underline;
+}
+.page-container {
+  margin: 5vh;
 }
 </style>

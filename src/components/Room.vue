@@ -1,8 +1,10 @@
 <template>
-  <b-card :style="'background-color:' + room.color">
-    <b-card-title>{{ room.name }}</b-card-title>
-    <b-card-body></b-card-body>
-  </b-card>
+  <div class="col-3">
+    <div class="m-2" :style="'background-color:' + room.color">
+      <h2>{{ room.name }}</h2>
+      <div></div>
+    </div>
+  </div>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <Room v-for="room in rooms" :key="room.name" :room="room"></Room>
   </div>
 </template>
