@@ -1,6 +1,6 @@
 <template>
   <div class="page-container">
-    <header><h1>Ou-est CharliMT ?</h1></header>
+    <header><h1>Où-est CharliMT ?</h1></header>
     <RoomList/>
   </div>
 </template>
@@ -25,5 +25,10 @@ h1 {
 }
 .border-1 {
   border: solid 1px;
+}
+
+.box {
+  height: 50vh;
+  text-align: center;
 }
 </style>

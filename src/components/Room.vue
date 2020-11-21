@@ -1,6 +1,6 @@
 <template>
   <div class="col-3">
-    <div class="m-2" :style="'background-color:' + room.color" style="height: 50vh; text-align: center">
+    <div class="m-2 box" :style="'background-color:' + room.color">
       <h2>{{ room.name }}</h2>
       <div></div>
     </div>
@@ -12,7 +12,7 @@ export default {
   name: 'Room',
   props: {
     room: {
-      default :{name: "", color: "grey"}
+      default :{id:0, name: "", color: "grey"}
     }
   }
 };
