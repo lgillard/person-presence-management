@@ -40,6 +40,7 @@ export default {
 .people
 {
   cursor: grab;
+  height: min-content;
 }
 
 .initials
