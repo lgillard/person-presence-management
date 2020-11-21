@@ -1,61 +1,157 @@
 {
-	"rooms": [
-		{
-			"id":    1,
-			"name":  "Arrêt maladie",
-			"color": "#32a852"
-		},
-		{
-			"id":    2,
-			"name":  "En cours",
-			"color": "#a83290"
-		},
-		{
-			"id":    3,
-			"name":  "En entreprise",
-			"color": "#eb9b13"
-		},
-		{
-			"id":    4,
-			"name":  "Disponible",
-			"color": "#0e90ed"
-		},
-		{
-			"id":    5,
-			"name":  "Indisponible",
-			"color": "#9ba0a3"
-		}
-	],
-	"users": [
-		{
-			"id":        1,
-			"firstname": "Bob",
-			"lastname":  "Sponge",
-			"room":      4
-		},
-		{
-			"id":        2,
-			"firstname": "Julie",
-			"lastname":  "Eilju",
-			"room":      2
-		},
-		{
-			"id":        3,
-			"firstname": "Emily",
-			"lastname":  "Ymeli",
-			"room":      2
-		},
-		{
-			"id":        1,
-			"firstname": "Jean",
-			"lastname":  "Jean",
-			"room":      3
-		},
-		{
-			"id":        3,
-			"firstname": "Roger",
-			"lastname":  "George",
-			"room":      2
-		}
-	]
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Arrêt maladie",
+      "color": "#32a852"
+    },
+    {
+      "id": 2,
+      "name": "En cours",
+      "color": "#a83290"
+    },
+    {
+      "id": 3,
+      "name": "En entreprise",
+      "color": "#eb9b13"
+    },
+    {
+      "id": 4,
+      "name": "Disponible",
+      "color": "#0e90ed"
+    },
+    {
+      "id": 5,
+      "name": "Indisponible",
+      "color": "#9ba0a3"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Lea",
+      "lastname": "Louesdon",
+      "room": "3"
+    },
+    {
+      "id": 2,
+      "firstname": "Océane",
+      "lastname": "Berthe",
+      "room": 2
+    },
+    {
+      "id": 3,
+      "firstname": "Chloé",
+      "lastname": "Masoni",
+      "room": 2
+    },
+    {
+      "id": 4,
+      "firstname": "Lucille",
+      "lastname": "Gillard",
+      "room": "2"
+    },
+    {
+      "id": 5,
+      "firstname": "Paul",
+      "lastname": "Bavazzano",
+      "room": 2
+    },
+    {
+      "id": 6,
+      "firstname": "My",
+      "lastname": "Tran",
+      "room": 2
+    },
+    {
+      "id": 7,
+      "firstname": "Mael",
+      "lastname": "Gaonach",
+      "room": 2
+    },
+    {
+      "id": 8,
+      "firstname": "Thomas",
+      "lastname": "Herbelin",
+      "room": "1"
+    },
+    {
+      "id": 9,
+      "firstname": "Mathis",
+      "lastname": "Delaunay",
+      "room": 2
+    },
+    {
+      "id": 10,
+      "firstname": "Lucas",
+      "lastname": "Pelecq",
+      "room": 2
+    },
+    {
+      "id": 11,
+      "firstname": "Antoine",
+      "lastname": "Omond",
+      "room": 2
+    },
+    {
+      "id": 12,
+      "firstname": "Theo",
+      "lastname": "Coutant",
+      "room": 2
+    },
+    {
+      "id": 13,
+      "firstname": "Emeric",
+      "lastname": "Chonigbaum",
+      "room": "3"
+    },
+    {
+      "id": 14,
+      "firstname": "Javed",
+      "lastname": "S",
+      "room": "4"
+    },
+    {
+      "id": 15,
+      "firstname": "Raphael",
+      "lastname": "Hascoet",
+      "room": "3"
+    },
+    {
+      "id": 16,
+      "firstname": "Florian",
+      "lastname": "Le Menn",
+      "room": 2
+    },
+    {
+      "id": 17,
+      "firstname": "Xabi",
+      "lastname": "Aleman",
+      "room": 2
+    },
+    {
+      "id": 18,
+      "firstname": "Robin",
+      "lastname": "Carrez",
+      "room": 2
+    },
+    {
+      "id": 19,
+      "firstname": "Evrard-Nil",
+      "lastname": "Daillet",
+      "room": "5"
+    },
+    {
+      "id": 20,
+      "firstname": "Barthelemy",
+      "lastname": "Tek",
+      "room": "5"
+    },
+    {
+      "id": 21,
+      "firstname": "Axel",
+      "lastname": "Coudray",
+      "room": "5"
+    }
+  ]
 }
