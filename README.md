@@ -70,3 +70,6 @@ Same solution as before
 
 #### Responsible
 The application is main responsible but it could be better
+
+## Thanks
+I've found the way to drag and drop element here http://jsfiddle.net/ortzv3j7/3/
