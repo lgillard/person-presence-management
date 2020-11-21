@@ -18,3 +18,7 @@ Run the vue application
 ```
 $ npm run serve
 ```
+
+## DEMO / Tuto
+This gif show you all features developped
+![alt text](./src/assets/Demo.gif)
