@@ -1,46 +1,61 @@
 {
-  "rooms": [
-    {
-      "id": 1,
-      "name": "Arrêt maladie",
-      "color": "#32a852"
-    },
-    {
-      "id": 2,
-      "name": "En cours",
-      "color": "#a83290"
-    },
-    {
-      "id": 3,
-      "name": "En entreprise",
-      "color": "#eb9b13"
-    },
-    {
-      "id": 4,
-      "name": "Disponible",
-      "color": "#0e90ed"
-    },
-    {
-      "id": 5,
-      "name": "Indisponible",
-      "color": "#9ba0a3"
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "name": "Bob",
-      "room": "Disponible"
-    },
-    {
-      "id": 2,
-      "name": "Julie",
-      "room": "En cours"
-    },
-    {
-      "id": 3,
-      "name": "Emily",
-      "room": "En cours"
-    }
-  ]
+	"rooms": [
+		{
+			"id":    1,
+			"name":  "Arrêt maladie",
+			"color": "#32a852"
+		},
+		{
+			"id":    2,
+			"name":  "En cours",
+			"color": "#a83290"
+		},
+		{
+			"id":    3,
+			"name":  "En entreprise",
+			"color": "#eb9b13"
+		},
+		{
+			"id":    4,
+			"name":  "Disponible",
+			"color": "#0e90ed"
+		},
+		{
+			"id":    5,
+			"name":  "Indisponible",
+			"color": "#9ba0a3"
+		}
+	],
+	"users": [
+		{
+			"id":        1,
+			"firstname": "Bob",
+			"lastname":  "Sponge",
+			"room":      4
+		},
+		{
+			"id":        2,
+			"firstname": "Julie",
+			"lastname":  "Eilju",
+			"room":      2
+		},
+		{
+			"id":        3,
+			"firstname": "Emily",
+			"lastname":  "Ymeli",
+			"room":      2
+		},
+		{
+			"id":        1,
+			"firstname": "Jean",
+			"lastname":  "Jean",
+			"room":      3
+		},
+		{
+			"id":        3,
+			"firstname": "Roger",
+			"lastname":  "George",
+			"room":      2
+		}
+	]
 }

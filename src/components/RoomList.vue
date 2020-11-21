@@ -1,7 +1,7 @@
 <template>
   <div class="row">
-    <Room v-for="room in rooms" :key="room.id" :room="room" @stateUpd="updateList"></Room>
-    <AddStateButton @newStateCreated="updateList"/>
+    <Room v-for="room in rooms" :key="room.id" :room="room" :users="users[room.id]" @stateUpd="updateRoomList"></Room>
+    <AddStateButton @newStateCreated="updateRoomList"/>
   </div>
 </template>
 
@@ -14,18 +14,39 @@ export default {
   name:       'RoomList', components: { AddStateButton, Room }, data()
   {
     return {
-      rooms: [],
+      rooms: [], users: {},
     };
   }, created()
   {
-    this.updateList();
-    setInterval(this.updateList, 10000);
+    this.updateData();
+    setInterval(this.updateData, 10000);
   }, methods: {
-    updateList()
+    updateData()
+    {
+      this.updateRoomList();
+      this.updateUserList();
+    }, updateRoomList()
     {
       axios.get('http://localhost:3000/rooms').then(response =>
                                                     {
                                                       this.rooms = response.data;
+                                                    });
+    }, updateUserList()
+    {
+      axios.get('http://localhost:3000/users').then(response =>
+                                                    {
+                                                      const data = response.data;
+                                                      this.users = {};
+
+                                                      for (const user of data)
+                                                      {
+                                                        if (this.users[user.room] === undefined)
+                                                        {
+                                                          this.users[user.room] = [];
+                                                        }
+                                                        this.users[user.room].push(user);
+                                                      }
+                                                      console.log(this.users);
                                                     });
     },
   },

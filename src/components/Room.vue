@@ -5,7 +5,9 @@
         <h2>{{ roomTemp.name }}</h2>
         <div>
           <!-- Peoples -->
-          <div></div>
+          <div>
+            <span v-for="user in users" :key="user.id">{{ user.name }},</span>
+          </div>
 
           <!-- Icons -->
           <div>
@@ -39,9 +41,9 @@ import axios from 'axios';
 
 export default {
   name:       'Room', props: {
-    room: {
+    room:     {
       default: { id: 0, name: '', color: 'grey' },
-    },
+    }, users: { type: [] },
   }, data()
   {
     return {
