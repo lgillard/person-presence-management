@@ -1,6 +1,6 @@
 <template>
-  <div class="h1 mb-2 pointer">
-    <b-icon-chat-dots></b-icon-chat-dots>
+  <div v-b-tooltip.hover class="h1 mb-2 pointer" title="Conversation">
+    <b-icon-chat-text></b-icon-chat-text>
   </div>
 </template>
 
