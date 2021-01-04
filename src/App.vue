@@ -1,16 +1,20 @@
 <template>
   <div class="page-container">
-    <header><h1>Où-est CharliMT ?</h1></header>
+    <header class="d-flex justify-content-between">
+      <h1>Où-est CharliMT ?</h1>
+      <ChatIcon></ChatIcon>
+    </header>
     <RoomList/>
   </div>
 </template>
 
 <script>
+import ChatIcon from '@/components/Chat-icon';
 import RoomList from '@/components/RoomList';
 
 export default {
   name: 'App', components: {
-    RoomList,
+    ChatIcon, RoomList,
   },
 };
 </script>
