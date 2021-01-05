@@ -2,31 +2,19 @@
   <div class="page-container">
     <header class="d-flex justify-content-between">
       <h1>Où-est CharliMT ?</h1>
-      <ChatIcon @chatIconClicked="onChatIcon"></ChatIcon>
+      <Chat></Chat>
     </header>
     <RoomList/>
-    <ChatBox :hidden="!displayChat"></ChatBox>
   </div>
 </template>
 
 <script>
-import ChatBox  from '@/components/Chat-box';
-import ChatIcon from '@/components/Chat-icon';
+import Chat     from '@/components/Chat';
 import RoomList from '@/components/RoomList';
 
 export default {
-  name:       'App', components: {
-    ChatBox, ChatIcon, RoomList,
-  }, data()
-  {
-    return {
-      displayChat: false,
-    };
-  }, methods: {
-    onChatIcon()
-    {
-      this.displayChat = !this.displayChat;
-    },
+  name: 'App', components: {
+    Chat, RoomList,
   },
 };
 </script>
