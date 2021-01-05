@@ -1,5 +1,5 @@
 <template>
-  <div v-b-tooltip.hover :data-id="person.id" :title="name" class="people" draggable="true" @dragstart="dragstart">
+  <div v-b-tooltip.hover :data-id="person.id" :draggable="draggable" :title="name" class="people" @dragstart="dragstart">
     <b-icon-person class="icon"></b-icon-person>
     <div class="initials">{{ initials }}</div>
   </div>
@@ -8,11 +8,11 @@
 <script>
 export default {
   name:        'Person', props: {
-    person: {
+    person:       {
       default: {
         'id': 0, 'firstname': 'Inconnu', 'lastname': 'Inconnu', 'room': 0,
       },
-    },
+    }, draggable: { default: true },
   }, computed: {
     initials()
     {
