@@ -4,9 +4,9 @@
       <b-icon-chat-text></b-icon-chat-text>
     </div>
 
-    <b-sidebar id="sidebar-backdrop" :backdrop-variant="variant" backdrop right shadow title="Fil de discussion">
+    <b-sidebar id="sidebar-backdrop" :backdrop-variant="variant" backdrop right shadow title="Fil de discussion" width="60vh">
       <div class="px-3 py-2">
-        <MessagesBox/>
+        <MessagesBox :message-list="messagesList"/>
         <label :for="'message'" class="d-block">Message :</label>
         <div class="d-flex">
           <b-form-input id="message" v-model="message" placeholder="Entrer votre message ici" type="text"/>
@@ -26,18 +26,19 @@ export default {
   name:       'Chat', components: { MessagesBox }, data()
   {
     return {
-      variant:  'dark',
-      variants: ['transparent',
-                 'white',
-                 'light',
-                 'dark',
-                 'primary',
-                 'secondary',
-                 'success',
-                 'danger',
-                 'warning',
-                 'info'],
-      message:  '',
+      variant:      'dark',
+      variants:     ['transparent',
+                     'white',
+                     'light',
+                     'dark',
+                     'primary',
+                     'secondary',
+                     'success',
+                     'danger',
+                     'warning',
+                     'info'],
+      message:      '',
+      messagesList: [],
     };
   }, methods: {
     sendMessage()
