@@ -7,11 +7,13 @@
     <b-sidebar id="sidebar-backdrop" :backdrop-variant="variant" backdrop right shadow title="Fil de discussion">
       <div class="px-3 py-2">
         <MessagesBox/>
-        <label class="d-block" for="message">Message :</label>
-        <input id="message" v-model="message" placeholder="Entrer votre message ici" type="text"/>
-        <button v-b-tooltip.hover class="pointer" title="Envoyer" type="submit" @click="sendMessage">
-          <b-icon-arrow-right></b-icon-arrow-right>
-        </button>
+        <label :for="'message'" class="d-block">Message :</label>
+        <div class="d-flex">
+          <b-form-input id="message" v-model="message" placeholder="Entrer votre message ici" type="text"/>
+          <b-button v-b-tooltip.hover class="pointer send-message-button" title="Envoyer" type="submit" @click="sendMessage">
+            <b-icon-arrow-right></b-icon-arrow-right>
+          </b-button>
+        </div>
       </div>
     </b-sidebar>
   </div>
@@ -49,5 +51,8 @@ export default {
 </script>
 
 <style scoped>
-
+.send-message-button
+{
+  margin-left: 0.5vh;
+}
 </style>
